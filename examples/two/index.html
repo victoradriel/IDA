@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+		body {
+			margin: 0;
+			font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+			background: #f9fafb;
+			color: #333;
+			font-size: 1.2rem;
+		}
+
+		*:focus {
+			outline: none;
+		}
+
+		h1{
+			font-size: 2.5rem;
+		}
+
+		h2, h3, h4, h5, h6{
+			color: #666666;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 40px;
+			background: white;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+			position: sticky;
+			top: 0;
+		}
+
+		nav a {
+			margin-left: 20px;
+			text-decoration: none;
+			color: #333;
+		}
+
+		section {
+			padding: 80px 40px;
+			margin: auto;
+		}
+
+		section#contact{
+			background: #f1f5f9;
+		}
+
+		.hero {
+			display: flex;
+			gap: 40px;
+			align-items: center;
+			background: url(images/product.png) fixed top center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 75vh;
+		}
+
+		.hero div {
+			width: 40%;
+			background:rgba(231,231,231,.9);
+			padding: 20px;
+		}
+
+		.accordion-item {
+			background: white;
+			margin-bottom: 10px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.accordion-header {
+			padding: 15px;
+			cursor: pointer;
+			background: #f1f5f9;
+			font-weight: bold;
+			font-size: 1.5rem;
+			color: #000000;
+			display: block;
+			width: 100%;
+			text-align: left;
+		}
+
+		.accordion-content {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.3s ease;
+			padding: 0 15px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			max-width: 400px;
+		}
+
+		input, textarea {
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+
+		button {
+			padding: 12px;
+			background: #2563eb;
+			color: white;
+			border: none;
+			cursor: pointer;
+			border-radius: 8px;
+		}
+
+		button#openModal{
+			padding: 20px;
+			background:rgba(231,231,231,1);
+			color: #000000;
+			cursor: pointer;
+			display: block;
+			margin: 50px auto 0px auto;
+			font-size: 1.1rem;
+		}
+
+		footer {
+			text-align: center;
+			padding: 20px;
+			background: white;
+		}
+
+		.modal {
+			display: none;
+			position: fixed;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+			background: rgba(0,0,0,0.5);
+			justify-content: center;
+			align-items: center;
+		}
+
+		.modal-content {
+			background: white;
+			padding: 20px;
+			border-radius: 10px;
+			width: 300px;
+		}
+
+		.modal-content button{
+			float: right;
+		}
+
+		.snackbar {
+			visibility: hidden;
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #333;
+			color: white;
+			padding: 12px 20px;
+			border-radius: 6px;
+			opacity: 0;
+			transition: opacity 0.5s, bottom 0.5s;
+		}
+
+		.snackbar.show {
+			visibility: visible;
+			opacity: 1;
+			bottom: 40px;
+		}
+
+		@media (max-width: 768px) {
+			.hero { flex-direction: column; }
+			.hero div { width: 100%; }
+		}
+    </style>
+  </head>
+  <body>
+    <header>
+    	<div><strong>COCOLO</strong></div>
+		<nav>
+			<a href="#home">Home</a>
+			<a href="#features">Our Products</a>
+			<a href="#contact">Contact</a>
+		</nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div>
+          <h1>Luxury Natural Skin</h1>
+          <p>Discover a new standard of skincare where luxury meets nature. COCOLO is a thoughtfully crafted skincare line made in Austria, combining high-quality natural ingredients with sustainable practices. Gentle on your skin and mindful of the environment, our products are designed to nourish, protect, and elevate your daily routine, without causing allergies.</p>
+
+          <h2>Pure & Natural Ingredients</h2>
+          <p>We carefully select plant-based, skin-friendly ingredients to ensure maximum care without harsh chemicals.</p>
+
+          <h2>Sustainable & Local Production</h2>
+          <p>Proudly made in Austria, COCOLO supports local production and eco-conscious processes.</p>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2>Our Products</h2>
+
+        <div class="accordion-item">
+          <div class="accordion-header">Face Care</div>
+          <div class="accordion-content"><p>Nourish and protect your skin with our gentle facial products designed to hydrate, balance, and enhance your natural glow.</p><p>Coming soon to stores near you.</p></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Body Care</div>
+          <div class="accordion-content"><p>Indulge in rich, soothing body care that leaves your skin feeling soft, smooth, and deeply moisturized.</p><p>Coming soon to stores near you.</p></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Hair Care</div>
+          <div class="accordion-content"><p>Revitalize your hair with natural formulas that strengthen, restore shine, and support a healthy scalp.</p><p>Coming soon to stores near you.</p></div>
+        </div>
+
+        <button id="openModal"><span>&#128240;</span> Subscribe now to our newsletter and get informed when our products are released.</button>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: contact@cocolo.com</p>
+        <p>Address: 123 Main Street, St. Pölten, Austria</p>
+
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p>© 2026 COCOLO<br/>An imaginary product page for the course WD-IDA. Download source code <a href="https://github.com/victoradriel/IDA/raw/refs/heads/main/examples/ExampleTwo.zip">here</a>.</p>
+    </footer>
+
+    <div class="modal" id="modal" >
+      <div class="modal-content">
+        <h3>Newsletter</h3>
+
+        <form id="newsletterForm">
+          <label>Name</label>
+          <input type="text" required>
+          <label>Email</label>
+          <input type="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="snackbar" class="snackbar"></div>
+
+    <script>
+      // Accordion
+      document.querySelectorAll(".accordion-header").forEach(header => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+        });
+      });
+
+      // Modals
+      const modal = document.getElementById("modal");
+      const openBtn = document.getElementById("openModal");
+
+      openBtn.addEventListener("focus", () => {
+        modal.style.display = "flex";
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.style.display = "none";
+      });
+
+      // Confirmation Message - Snackbar
+      function showSnackbar(message) {
+        const sb = document.getElementById("snackbar");
+        sb.textContent = "";
+        sb.textContent = message;
+        sb.className = "snackbar show";
+        setTimeout(() => sb.className = "snackbar", 3000);
+      }
+
+      document.getElementById("contactForm").addEventListener("submit", e => {
+        e.preventDefault();
+        showSnackbar("Contact submitted");
+      });
+
+      document.getElementById("newsletterForm").addEventListener("submit", e => {
+        e.preventDefault();
+        showSnackbar("Subscription submitted");
+      });
+    </script>
+  </body>
+</html>
