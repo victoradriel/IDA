@@ -1,0 +1,83 @@
+[
+  {
+    "id": "p-001",
+    "title": "Linen Blend Shirt",
+    "description": "Breathable long-sleeve shirt with a relaxed fit for daily comfort and polished casual style.",
+    "price": 49.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+    "alt": "Folded beige linen blend shirt on a wooden table."
+  },
+  {
+    "id": "p-002",
+    "title": "Classic Sneakers",
+    "description": "Minimal sneakers with cushioned insoles and flexible outsole for all-day wear.",
+    "price": 89.5,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+    "alt": "Pair of white sneakers against a light background."
+  },
+  {
+    "id": "p-003",
+    "title": "Chrono Wrist Watch",
+    "description": "Modern stainless steel watch with matte black dial and water-resistant construction.",
+    "price": 139.0,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=80",
+    "alt": "Silver wrist watch with black dial displayed upright."
+  },
+  {
+    "id": "p-004",
+    "title": "Noise-Canceling Headphones",
+    "description": "Over-ear wireless headphones with adaptive noise canceling and up to 30-hour battery life.",
+    "price": 199.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+    "alt": "Black over-ear headphones resting on a light desk."
+  },
+  {
+    "id": "p-005",
+    "title": "Smart Home Speaker",
+    "description": "Compact smart speaker with voice assistant integration and rich 360-degree sound.",
+    "price": 79.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1519558260268-cde7e03a0152?auto=format&fit=crop&w=900&q=80",
+    "alt": "Small gray smart speaker on a white shelf."
+  },
+  {
+    "id": "p-006",
+    "title": "Portable Power Bank",
+    "description": "20,000 mAh fast-charging power bank with dual USB-C outputs for travel convenience.",
+    "price": 45.0,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?auto=format&fit=crop&w=900&q=80",
+    "alt": "Slim black power bank connected to a smartphone."
+  },
+  {
+    "id": "p-007",
+    "title": "Ceramic Dinner Set",
+    "description": "Durable 16-piece ceramic set including plates, bowls, and mugs in matte finish.",
+    "price": 119.99,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=900&q=80",
+    "alt": "Stacked ceramic plates and bowls in neutral tones."
+  },
+  {
+    "id": "p-008",
+    "title": "Scented Soy Candle",
+    "description": "Hand-poured soy candle with cedar and vanilla notes, designed for long clean burn.",
+    "price": 24.95,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80",
+    "alt": "Lit soy candle in a glass jar on a coffee table."
+  },
+  {
+    "id": "p-009",
+    "title": "Textured Throw Blanket",
+    "description": "Throw blanket that adds warmth and texture to sofas or beds.",
+    "price": 39.75,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1515852216175-927860d2be80?auto=format&fit=crop&w=900&q=80",
+    "alt": "Throw blanket draped over a sofa armrest."
+  }
+]

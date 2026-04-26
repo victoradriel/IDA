@@ -1,0 +1,110 @@
+[
+  {
+    "id": "p-001",
+    "title": "Linen Blend Shirt",
+    "description": "Breathable long-sleeve shirt with a relaxed fit for daily comfort and polished casual style.",
+    "price": 49.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+    "alt": "Folded beige linen blend shirt on a wooden table."
+  },
+  {
+    "id": "p-006",
+    "title": "Portable Power Bank",
+    "description": "20,000 mAh fast-charging power bank with dual USB-C outputs for travel convenience.",
+    "price": 45.0,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?auto=format&fit=crop&w=900&q=80",
+    "alt": "Slim black power bank connected to a smartphone."
+  },
+  {
+    "id": "p-008",
+    "title": "Scented Soy Candle",
+    "description": "Hand-poured soy candle with cedar and vanilla notes, designed for long clean burn.",
+    "price": 24.95,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80",
+    "alt": "Lit soy candle in a glass jar on a coffee table."
+  },
+  {
+    "id": "p-009",
+    "title": "Textured Throw Blanket",
+    "description": "Soft woven throw blanket that adds warmth and texture to sofas or beds.",
+    "price": 39.75,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1515852216175-927860d2be80?auto=format&fit=crop&w=900&q=80",
+    "alt": "Folded textured throw blanket draped over a sofa armrest."
+  },
+  {
+    "id": "c-001",
+    "title": "Kids Cotton T-Shirt",
+    "description": "Soft cotton short-sleeve t-shirt with a relaxed fit for everyday comfort and play.",
+    "price": 19.99,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=900&q=80",
+    "alt": "Colorful kids cotton t-shirt folded on a table."
+  },
+  {
+    "id": "c-002",
+    "title": "Children's Sneakers",
+    "description": "Lightweight sneakers with secure straps and cushioned soles for active kids.",
+    "price": 34.5,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1678192569393-c7aff066e5bd?auto=format&fit=crop&w=900&q=80",
+    "alt": "Pair of children's sneakers with straps."
+  },
+  {
+    "id": "c-003",
+    "title": "Kids Digital Clock",
+    "description": "Fun and durable clock with colorful design and splash-resistant build.",
+    "price": 24.0,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1599673452313-7063848fe26b?auto=format&fit=crop&w=900&q=80",
+    "alt": "Bright kids clock on display."
+  },
+  {
+    "id": "c-004",
+    "title": "Kids Wireless Headphones",
+    "description": "Comfortable over-ear wireless headphones with volume limiting for safe listening.",
+    "price": 49.99,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+    "alt": "Colorful children's wireless headphones on desk."
+  },
+  {
+    "id": "c-006",
+    "title": "Kids Tablet Case",
+    "description": "Shockproof tablet case with handle stand, made to protect children's devices.",
+    "price": 29.0,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1599666527768-e8cf85741436?q=80?auto=format&fit=crop&w=900&q=80",
+    "alt": "Durable colorful tablet case for kids."
+  },
+  {
+    "id": "c-007",
+    "title": "Children's Dinner Set",
+    "description": "Durable 5-piece dining set including plate, bowl, cup, fork, and spoon for kids.",
+    "price": 27.99,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1674121068900-7fc132be3564?auto=format&fit=crop&w=900&q=80",
+    "alt": "Children's colorful dinner plate and bowl set."
+  },
+  {
+    "id": "c-008",
+    "title": "Night Light Lamp",
+    "description": "Soft glowing bedside lamp with playful shape to comfort children at bedtime.",
+    "price": 22.95,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1595183709187-5861e90e6a83?auto=format&fit=crop&w=900&q=80",
+    "alt": "Cute children's night light glowing on bedside table."
+  },
+  {
+    "id": "c-009",
+    "title": "Wooden Train",
+    "description": "4-piece vehicle set, sports car/school bus recycling truck/police car/multicolour.",
+    "price": 31.75,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=900&auto=format&fit=crop",
+    "alt": "Multicolour wooden train."
+  }
+]

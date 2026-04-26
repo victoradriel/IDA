@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDAShop - Profile</title>
+    <link rel="stylesheet" href="./style/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-wrap">
+        <a class="brand" href="./index.html">IDAShop</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./children.html">Children</a></li>
+            <li><a href="./under50.html">Under $50</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="right-actions">
+          
+          <a class="icon-btn" href="./cart.html" aria-label="Open cart page">
+            Cart (<span id="cartCount" aria-live="polite">0</span>)
+          </a>
+          <button id="authTrigger" class="auth-trigger" type="button" hidden="false">Login / Register</button>
+          <div class="profile-menu">
+            <button id="profileToggle" class="profile-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="profileDropdown" hidden="true">Profile Menu</button>
+            <ul id="profileDropdown" class="dropdown" role="menu" aria-label="Profile options">
+              <li role="none"><a role="menuitem" href="./orders.html">Orders</a></li>
+              <li role="none"><a role="menuitem" href="./wishlist.html">Wishlist</a></li>
+              <li role="none"><a role="menuitem" href="./profile.html">Account</a></li>
+              <li role="none"><button id="profileLogout" class="profile-toggle">Log Out</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page">
+      <h1>Profile Settings</h1>
+      <section class="grid-2">
+        <div id="address" class="panel">
+          <h2>Address Options</h2>
+          <form id="addressForm">
+            <div class="field">
+              <label for="addressInput">New Address</label>
+              <textarea id="addressInput" name="address" rows="3" autocomplete="street-address" required></textarea>
+            </div>
+            <button class="btn" type="submit">Add Address</button>
+          </form>
+          <ul id="addressList" class="list-reset" aria-live="polite"></ul>
+        </div>
+
+        <div id="payment" class="panel">
+          <h2>Payment Options</h2>
+          <form id="paymentForm">
+            <div class="field">
+              <label for="paymentInput">New Payment Option</label>
+              <input id="paymentInput" name="payment" placeholder="Visa ending 2244" autocomplete="billing" required>
+            </div>
+            <button class="btn" type="submit">Add Payment Option</button>
+          </form>
+          <ul id="paymentList" class="list-reset" aria-live="polite"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <p>&copy; 2026 IDAShop</p>
+        <div class="footer-links">
+          <a href="https://www.ustp.at/de/impressum">Data Privacy and Impressum</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="https://github.com/victoradriel/IDA/raw/refs/heads/main/examples/ExampleThree.zip">Source Code</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="authModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="authTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="authTitle">Account access</h2>
+          <button id="authClose" class="close-btn" type="button" aria-label="Close auth modal">✕</button>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Authentication tabs">
+          <button class="tab-btn" role="tab" aria-selected="true" data-tab="login" type="button">Login</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="register" type="button">Register</button>
+        </div>
+        <form id="loginForm">
+          <div class="field"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" required></div>
+          <div class="field"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" required></div>
+          <button class="btn" type="submit">Login</button>
+        </form>
+        <form id="registerForm" hidden>
+          <div class="field"><label for="regName">Name</label><input id="regName" name="name" required></div>
+          <div class="field"><label for="regEmail">Email</label><input id="regEmail" name="email" type="email" required></div>
+          <div class="field"><label for="regPassword">Password</label><input id="regPassword" name="password" type="password" required></div>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="snackbar" class="snackbar" role="status" aria-live="polite"></div>
+    <script src="./js/common.js"></script>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>
